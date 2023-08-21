@@ -1,0 +1,441 @@
+/*
+Theme Name: Twenty Twenty
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+     
+}
+
+:root {
+    --primary: #4DC0EF;
+    --secondary: #002F42;
+}
+
+.text-prim {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-sec {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.text-color {
+    color: #4C5255;
+    font-size: 14px;
+}
+.navbar {
+    background: var(--secondary) !important;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) !important;
+}
+
+.nav-item {
+    margin: 0 1.35rem;
+}
+
+.dropdown-secondary {
+    background: var(--secondary) !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    margin: 1rem 0;
+    transition: .2s ease-in-out;
+}
+
+.dropdown-item:hover {
+   color: var(--primary) !important;
+   background: none !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.hero-section {
+    background: url(./img/hero-image.png) center center/cover;
+    height: 664px;
+    width: 100%;
+}
+
+.hero-content{
+   padding-top: 6rem;
+}
+
+.hero-content h1 {
+    font-size: 41px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.hero-content p {
+    color: #fff;
+    width: 50%;
+    line-height: 23px;
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+
+.hero-content .btn-hero {
+    color: #fff;
+    background: var(--primary);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn-hero:hover {
+    background: #6fcbf0;
+}
+
+span {
+    color: var(--primary);
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+}
+
+.services-wrap {
+    margin-bottom: 3.5rem !important;
+}
+
+.services-wrap {
+    width: 40%;
+    margin: auto;
+}
+
+.services-wrap h2 {
+    margin-bottom: 1rem;
+}
+
+.services-wrap p {
+    line-height: 24px;
+}
+
+.services-heading {
+    margin-bottom: 0.5rem;
+}
+
+.card-info {
+    box-shadow: 0 13px 17px #e9e9e9;
+    padding: 1.5rem 0.25rem;
+}
+
+.card-title {
+    color: var(--secondary);
+}
+
+.card-text {
+    color: #4C5255;
+}
+
+.card-info p {
+    font-size: 13px;
+}
+
+.card-info a {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 0.5rem 1.25rem;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-info h5 {
+    color: var(--secondary);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+ 
+.cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 4.5rem;
+}
+
+.read-more {
+    transition: .2s ease-in;
+    color: #4C5255;
+}
+
+.read-more:hover {
+    color: var(--primary);
+}
+
+.info-img {
+    background: var(--primary);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.our-mission {
+    padding: 2rem 0;
+    background: url(./img/Group\ 27.jpg) no-repeat center center/cover;
+    z-index: -2;
+}
+
+.mission-content {
+    margin-top: 3rem;
+    width: 50%;
+    
+}
+
+.mission-p {
+    margin-bottom: 0.5rem;
+}
+
+.mission-text {
+    margin-top: 1.5rem;
+    line-height: 27px;
+    color: #4C5255;
+}
+
+.mission-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: url(./img/Repeat\ Grid\ 1.svg) no-repeat;
+    background-position: 50% 80%;
+    
+}
+
+.news {
+    margin: 2rem 0;
+}
+
+.news .card {
+    box-shadow: 0 13px 17px #e9e9e9;
+}
+
+.card {
+    margin: 2rem 0;
+}
+
+.card-info {
+    transition: .2s ease-in;
+}
+
+.card-info a {
+    transition: .2s ease-in-out;
+}
+
+.card-info a:hover {
+    background: var(--secondary);
+}
+
+.card-info:hover {
+    transform: translateY(-20px) !important;
+}
+
+.specialist {
+    padding: 0.75rem 1.45rem;
+}
+
+.btn-primary {
+    background: var(--primary) !important;
+    border: none !important;
+    outline: none !important;
+}
+
+
+.card h4 {
+    position: absolute;
+    top: 60%;
+}
+
+.cta {
+    background: url(./img/Group\ 29.jpg) no-repeat center center/cover;
+    height: 100px;
+    margin-top: 5rem;
+}
+
+.date {
+    position: absolute;
+    background: var(--primary);
+    padding: 0.25rem 0.5rem;
+    margin: 1rem 0.25rem;
+}
+
+footer {
+    background: var(--secondary);
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.footer-head {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.copyright {
+    float: right;
+}
+
+ 
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: var(--primary);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+   
+  .dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+  }
+   
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+
+@media (max-width: 991.98px) {
+
+    .footer-head {
+            margin: 1.5rem 0;
+    }
+ 
+    .hero-content {
+        text-align: center;
+         
+    }
+    .hero-content h1 {
+        width: 100%;
+    }
+
+    .hero-content p {
+        width: 100%;
+    }
+
+    .services {
+        padding: 0 2rem;
+    }
+
+    .services-wrap {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+
+    .mission-wrapper {
+        flex-direction: column;
+        
+    }
+
+    .mission-content {
+        width: 100%;
+    }
+
+    .mission-p, .mission-h1 {
+        text-align: center;
+    }
+
+    .copyright {
+       float: none;
+       text-align: center;
+    }
+
+    .socials {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    footer {
+        text-align: center;
+    }
+
+    .cta {
+        padding-top: 1rem !important;
+    }
+
+    .navbar {
+        position: static !important;
+    }
+    .cards {
+        grid-template-columns: none;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .text-sec {
+        font-size: 25px;
+    }
+
+    .mission-img {
+        margin-top: 3rem;
+    }
+}
+
